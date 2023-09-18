@@ -17,3 +17,7 @@ main() {
 
   cd "${current_pwd}"
 }
+
+test_main() {
+  main /tmp/
+}
