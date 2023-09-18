@@ -30,14 +30,13 @@ main() {
   then
   echo "$(hostname) is a VM"
   else
-  cat /sys/class/fc_host/host?/port_name
+  cat /sys/class/fc_host/host?/port_name && true
   fi
   echo ""
   
   echo -e "-------------------------------Oracle DB Instances---------------------------"
   if id oracle >/dev/null 2>&1; then
   /bin/ps -ef|grep pmon
-  then
   else
   echo "oracle user does not exist on $(hostname)"
   fi
@@ -50,7 +49,7 @@ main() {
   echo -e "-----------------------------------------------------------------------------"
   else
   echo -e "-------------------------------Package Updates-------------------------------"
-  cat /var/lib/update-notifier/updates-available
+  cat /var/lib/update-notifier/updates-available && true
   echo -e "-----------------------------------------------------------------------------"
   fi
 }
