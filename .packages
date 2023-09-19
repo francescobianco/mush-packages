@@ -4,12 +4,8 @@
 ##
 ## This file lists all the packages that will be installed or updated during
 
-package demo-app https://github.com/javanile/mush.git packages/demo-app
-package demo-lib https://github.com/javanile/mush.git packages/demo-lib
+package demo-app https://github.com/francescobianco/mush-packages.git packages/demo-app *
+package demo-lib https://github.com/francescobianco/mush-packages.git packages/demo-lib *
+
 package sysinfo https://github.com/francescobianco/mush-packages.git packages/sysinfo *
-
-
-
-
-
-
+package packdir https://github.com/francescobianco/mush-packages.git packages/packdir *
