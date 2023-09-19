@@ -1,6 +1,4 @@
 
-
-
 main () {
 
   echo "Hello world!"
