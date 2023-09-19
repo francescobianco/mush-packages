@@ -9,3 +9,4 @@ package demo-lib https://github.com/francescobianco/mush-packages.git packages/d
 
 package sysinfo https://github.com/francescobianco/mush-packages.git packages/sysinfo *
 package packdir https://github.com/francescobianco/mush-packages.git packages/packdir *
+package minidoc https://github.com/francescobianco/mush-packages.git packages/minidoc *
