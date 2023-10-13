@@ -1,0 +1,7 @@
+echo -e "'"
+echo -e "\""
+echo -e "\e[1m\e[31merror:\e[0m unexpected argument '\e[33m--path\e[0m' found"
+echo -e ""
+echo -e "\e[1m\e[4mUsage:\e[0m \e[1mcargo build\e[0m [OPTIONS]"
+echo -e ""
+echo -e "For more information, try '\e[1m--help\e[0m'."
