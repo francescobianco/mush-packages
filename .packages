@@ -11,4 +11,5 @@ package sysinfo https://github.com/francescobianco/mush-packages.git packages/sy
 package packdir https://github.com/francescobianco/mush-packages.git packages/packdir *
 package minidoc https://github.com/francescobianco/mush-packages.git packages/minidoc *
 
+package speedtest https://github.com/francescobianco/mush-packages.git packages/speedtest *
 package echofake https://github.com/francescobianco/mush-packages.git packages/echofake *
