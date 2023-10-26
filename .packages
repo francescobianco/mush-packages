@@ -4,6 +4,8 @@
 ##
 ## This file lists all the packages that will be installed or updated during
 
+package mush-demo https://github.com/francescobianco/mush-demo
+
 package demo-app https://github.com/francescobianco/mush-packages.git packages/demo-app *
 package demo-lib https://github.com/francescobianco/mush-packages.git packages/demo-lib *
 
