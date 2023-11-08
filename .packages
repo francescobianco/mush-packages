@@ -15,3 +15,4 @@ package minidoc https://github.com/francescobianco/mush-packages.git packages/mi
 
 package speedtest https://github.com/francescobianco/mush-packages.git packages/speedtest *
 package echofake https://github.com/francescobianco/mush-packages.git packages/echofake *
+package portinfo https://github.com/francescobianco/mush-packages.git packages/portinfo *
