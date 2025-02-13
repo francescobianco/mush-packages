@@ -6,7 +6,7 @@
 
 ## Dev tools
 package myown https://github.com/francescobianco/myown
-package myown https://github.com/francescobianco/convcommit # Interactive conventionl commit for CLI workflow
+package convcommit https://github.com/francescobianco/convcommit # Interactive conventionl commit for CLI workflow
 
 ## Micro tools
 package sysinfo https://github.com/francescobianco/mush-packages.git packages/sysinfo *
