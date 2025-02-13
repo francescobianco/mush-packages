@@ -4,17 +4,20 @@
 ##
 ## This file lists all the packages that will be installed or updated during
 
-package mush-demo https://github.com/francescobianco/mush-demo
+## Dev tools
+package myown https://github.com/francescobianco/myown
+package myown https://github.com/francescobianco/convcommit # Interactive conventionl commit for CLI workflow
 
-package demo-app https://github.com/francescobianco/mush-packages.git packages/demo-app *
-package demo-lib https://github.com/francescobianco/mush-packages.git packages/demo-lib *
-
+## Micro tools
 package sysinfo https://github.com/francescobianco/mush-packages.git packages/sysinfo *
 package packdir https://github.com/francescobianco/mush-packages.git packages/packdir *
 package minidoc https://github.com/francescobianco/mush-packages.git packages/minidoc *
-
 package speedtest https://github.com/francescobianco/mush-packages.git packages/speedtest *
 package echofake https://github.com/francescobianco/mush-packages.git packages/echofake *
 package portinfo https://github.com/francescobianco/mush-packages.git packages/portinfo *
 
-package myown https://github.com/francescobianco/myown
+## Demo packages
+package mush-demo https://github.com/francescobianco/mush-demo
+package demo-app https://github.com/francescobianco/mush-packages.git packages/demo-app *
+package demo-lib https://github.com/francescobianco/mush-packages.git packages/demo-lib *
+
