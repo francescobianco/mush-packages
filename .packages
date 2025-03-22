@@ -8,6 +8,9 @@
 package myown https://github.com/francescobianco/myown
 package convcommit https://github.com/francescobianco/convcommit # Interactive conventionl commit for CLI workflow
 
+## CI/CD tools
+package github-traffic https://github.com/francescobianco/mush-packages.git packages/github-traffic *
+
 ## Micro tools
 package sysinfo https://github.com/francescobianco/mush-packages.git packages/sysinfo *
 package packdir https://github.com/francescobianco/mush-packages.git packages/packdir *
