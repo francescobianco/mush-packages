@@ -8,6 +8,9 @@
 package myown https://github.com/francescobianco/myown
 package convcommit https://github.com/francescobianco/convcommit # Interactive conventionl commit for CLI workflow
 
+## SysAdmin tools
+package my https://github.com/francescobianco/my # Ridiculously Simple CLI for Host Management
+
 ## CI/CD tools
 package github-traffic https://github.com/francescobianco/mush-packages.git packages/github-traffic *
 
