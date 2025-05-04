@@ -65,7 +65,8 @@ main () {
         [ "$rank" -gt "$last_rank" ] && trend="🟥"
         [ "$rank" -lt "$last_rank" ] && trend="🟩"
       fi
-      echo "| $rank | [$repository](https://github.com/$repository) | $uniques | $views | $sources | $stars | $trend |" >> README.md
+      warning="[⚠️](a \"Problem\")"
+      echo "| $rank | [$repository](https://github.com/$repository) ${warning} | $uniques | $views | $sources | $stars | $trend |" >> README.md
       rank=$((rank+1))
     done < repositories.2
   fi
