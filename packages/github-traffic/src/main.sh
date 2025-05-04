@@ -1,4 +1,6 @@
 main () {
+  local per_page
+  local curl_user
 
   [ -f .env ] && source .env
 
@@ -8,6 +10,8 @@ main () {
     echo "Missing token"
     exit 1
   fi
+
+  per_page=${1:-100}
 
   user=$(git config --get remote.origin.url | cut -d: -f2 | cut -d/ -f4)
 
@@ -21,7 +25,7 @@ main () {
   echo "Fetch repositories list"
   rm -f repositories.0 > /dev/null 2>&1
   for page in {1..5}; do
-    curl -s "https://api.github.com/users/${user}/repos?page=${page}&per_page=100" | grep '"full_name":' | cut -d'"' -f4 >> repositories.0
+    curl -s "https://api.github.com/users/${user}/repos?page=${page}&per_page=${per_page}" | grep '"full_name":' | cut -d'"' -f4 >> repositories.0
   done
 
   ## Repositories classifier
