@@ -3,7 +3,7 @@
 # @package: github-traffic
 # @build_type: bin
 # @build_with: Mush v0.2.0 (2025-05-02 develop)
-# @build_date: 2025-05-04T16:09:15Z
+# @build_date: 2025-05-04T16:14:51Z
 set -e
 use() { return 0; }
 extern() { return 0; }
@@ -72,7 +72,7 @@ main () {
       stars=$(echo "$entry" | cut -d' ' -f5)
       last_rank=$(grep "\[$repository\]" README.md.0 | head -1 | cut -d'|' -f2 | xargs)
       trend=""
-      if [ "${uniques}${views}${sources}" != "000"]; then
+      if [ "${uniques}${views}${sources}" != "000" ]; then
         [ "$rank" -gt "$last_rank" ] && trend="🟥"
         [ "$rank" -lt "$last_rank" ] && trend="🟩"
       fi

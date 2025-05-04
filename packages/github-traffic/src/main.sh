@@ -57,7 +57,7 @@ main () {
       stars=$(echo "$entry" | cut -d' ' -f5)
       last_rank=$(grep "\[$repository\]" README.md.0 | head -1 | cut -d'|' -f2 | xargs)
       trend=""
-      if [ "${uniques}${views}${sources}" != "000"]; then
+      if [ "${uniques}${views}${sources}" != "000" ]; then
         [ "$rank" -gt "$last_rank" ] && trend="🟥"
         [ "$rank" -lt "$last_rank" ] && trend="🟩"
       fi
