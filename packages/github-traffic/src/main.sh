@@ -34,15 +34,18 @@ main () {
     rm -f repositories.1 > /dev/null 2>&1
     while IFS="" read -r repository || [ -n "$repository" ]; do
       info=$(curl -s -u "$curl_user" "https://api.github.com/repos/${repository}")
-      #echo "$info"
+      #echo "$info" > info.json
+      #exit
       default_branch=$(echo "$info" | grep '"default_branch":' | cut -d'"' -f4 | head -n1)
-      warning=""
-      [ "$default_branch" != "main" ] && warning="Problem with default branch"
       stars=$(echo "$info" | grep '"stargazers_count":' | sed 's/[^0-9]*//g' | head -n1)
       traffic=$(curl -s -u "$curl_user" "https://api.github.com/repos/${repository}/traffic/popular/referrers")
       uniques=$(echo '"uniques":0' "${traffic}" | grep '"uniques"' | sed 's/[^0-9]*//g' | paste -s -d+ - | bc)
       views=$(echo '"count":0' "${traffic}" | grep '"count"' | sed 's/[^0-9]*//g' | paste -s -d+ - | bc)
       sources=$(echo "$traffic" | grep '"count"' | wc -l | xargs)
+
+      warning=""
+      [ "$default_branch" != "main" ] && warning="Problem with default branch"
+
       echo "$repository $uniques $views $sources $stars $warning" >> repositories.1
     done < repositories.0
   fi
