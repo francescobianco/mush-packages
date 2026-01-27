@@ -18,7 +18,7 @@ main () {
 
   cp README.md README.md.0
   echo "# ${user} (traffic)" > README.md
-  echo "[![Traffic Update](https://github.com/javanile/github-traffic/actions/workflows/update.yml/badge.svg)](https://github.com/javanile/github-traffic/actions/workflows/update.yml)" >> README.md
+  echo "[![Traffic Update](https://github.com/${user}/github-traffic/actions/workflows/update.yml/badge.svg)](https://github.com/${user}/github-traffic/actions/workflows/update.yml)" >> README.md
   echo "![Last Update](https://img.shields.io/badge/Last%20Update-$(date -u +%Y--%m--%d%%20%H%%3A%M%%3A%S)%20UTC-blue)  " >> README.md
   echo "This file collects all information about the traffic to our repositories." >> README.md
   echo "" >> README.md
