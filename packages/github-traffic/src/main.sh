@@ -1,6 +1,7 @@
 main () {
   local per_page
   local curl_user
+  local last_rank
 
   [ -f .env ] && source .env
 
@@ -70,6 +71,7 @@ main () {
       last_rank=$(grep "\[$repository\]" README.md.0 | head -1 | cut -d'|' -f2 | xargs)
       trend=""
       if [ "${uniques}${views}${sources}" != "000" ]; then
+        [ -z "$last_rank" ] && last_rank=0
         [ "$rank" -gt "$last_rank" ] && trend="🟥"
         [ "$rank" -lt "$last_rank" ] && trend="🟩"
       fi

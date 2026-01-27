@@ -2,8 +2,8 @@
 # @BP010: Release metadata
 # @package: github-traffic
 # @build_type: bin
-# @build_with: Mush v0.2.0 (2025-05-02 develop)
-# @build_date: 2025-05-04T16:51:53Z
+# @build_with: Mush v0.2.0 (2025-05-15 develop)
+# @build_date: 2026-01-27T18:00:08Z
 set -e
 use() { return 0; }
 extern() { return 0; }
@@ -16,6 +16,7 @@ inject() { return 0; }
 main () {
   local per_page
   local curl_user
+  local last_rank
 
   [ -f .env ] && source .env
 
@@ -85,6 +86,7 @@ main () {
       last_rank=$(grep "\[$repository\]" README.md.0 | head -1 | cut -d'|' -f2 | xargs)
       trend=""
       if [ "${uniques}${views}${sources}" != "000" ]; then
+        [ -z "$last_rank" ] && last_rank=0
         [ "$rank" -gt "$last_rank" ] && trend="🟥"
         [ "$rank" -lt "$last_rank" ] && trend="🟩"
       fi
