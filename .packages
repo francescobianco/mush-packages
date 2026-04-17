@@ -5,7 +5,7 @@
 ## This file lists all the packages that will be installed or updated during
 
 ## Dev tools
-package git-login https://github.com/francescobianco/git-login
+package git-login https://github.com/francescobianco/git-login # Never type your token again after cloning a repo
 package myown https://github.com/francescobianco/myown
 package convcommit https://github.com/francescobianco/convcommit # Interactive conventionl commit for CLI workflow
 
