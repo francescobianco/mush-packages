@@ -11,6 +11,7 @@ package convcommit https://github.com/francescobianco/convcommit # Interactive c
 package my https://github.com/francescobianco/my # Ridiculously Simple CLI for Host Management
 package lastchanges https://github.com/francescobianco/lastchanges # Lists the most recently modified files in the system
 package apexdomain https://github.com/francescobianco/apexdomain # A diagnostic tool that checks apex-domain
+package hostrun https://github.com/francescobianco/hostrun # Low-level provisioning over SSH
 
 ## CI/CD tools
 package github-traffic https://github.com/francescobianco/mush-packages.git packages/github-traffic *
